@@ -30,6 +30,14 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, [currentIndex, texts]);
 
+  const handleGetInTouch = () => {
+    window.location.href = 'mailto:realdivyanshsingh@gmail.com';
+  };
+
+  const handleViewWork = () => {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
@@ -67,28 +75,28 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center space-x-6 mb-12">
-          <a
-            href="mailto:realdivyanshsingh@gmail.com"
-            className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+          <button
+            onClick={handleGetInTouch}
+            className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
           >
             Get In Touch
-          </a>
-          <a
-            href="#projects"
-            className="border border-purple-400 hover:bg-purple-400/20 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+          </button>
+          <button
+            onClick={handleViewWork}
+            className="border border-purple-400 hover:bg-purple-400/20 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             View My Work
-          </a>
+          </button>
         </div>
 
         <div className="flex justify-center space-x-6 mb-12">
           <a href="mailto:realdivyanshsingh@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
             <Mail size={24} />
           </a>
-          <a href="https://github.com/Destroyerg00" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
+          <a href="https://github.com/Destroyerg00" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com/in/divyansh-singh-244557199" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
+          <a href="https://linkedin.com/in/divyansh-singh-244557199" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
             <Linkedin size={24} />
           </a>
         </div>

@@ -14,7 +14,7 @@ const SaasPortals = () => {
         "Advanced analytics and reporting",
         "Customer feedback management"
       ],
-      tech: ["React", "Node.js", "MongoDB", "API Integration"],
+      tech: ["Lovable", "React", "TypeScript", "Supabase", "Tailwind CSS"],
       icon: <Users className="w-6 h-6" />,
       gradient: "from-blue-500 to-cyan-600"
     },
@@ -28,7 +28,7 @@ const SaasPortals = () => {
         "User collaboration features",
         "Progress tracking and analytics"
       ],
-      tech: ["React", "Firebase", "Cloud Storage", "Real-time Database"],
+      tech: ["Lovable", "React", "TypeScript", "Supabase", "Tailwind CSS"],
       icon: <Database className="w-6 h-6" />,
       gradient: "from-emerald-500 to-teal-600"
     }
@@ -43,7 +43,7 @@ const SaasPortals = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Specialized experience in building scalable SAAS platforms and web portals with modern technologies and user-centric design.
+            Specialized experience in building scalable SAAS platforms and web portals using Lovable and Supabase for rapid development and deployment.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ const SaasPortals = () => {
         <div className="text-center mt-12">
           <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30">
             <span className="text-cyan-300 font-medium">
-              Expertise in full-stack development, cloud deployment, and scalable architecture
+              Built with Lovable & Supabase for rapid full-stack development and deployment
             </span>
           </div>
         </div>

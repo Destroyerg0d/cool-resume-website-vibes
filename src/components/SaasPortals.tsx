@@ -17,7 +17,7 @@ const SaasPortals = () => {
       tech: ["Lovable", "React", "TypeScript", "Supabase", "Tailwind CSS"],
       icon: <Users className="w-6 h-6" />,
       gradient: "from-blue-500 to-cyan-600",
-      previewImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+      previewImage: "/lovable-uploads/a8160365-c708-4fca-8cbe-e17ec4e26fa7.png"
     },
     {
       title: "The Study Hub Library",
@@ -32,7 +32,7 @@ const SaasPortals = () => {
       tech: ["Lovable", "React", "TypeScript", "Supabase", "Tailwind CSS"],
       icon: <Database className="w-6 h-6" />,
       gradient: "from-emerald-500 to-teal-600",
-      previewImage: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop"
+      previewImage: "/lovable-uploads/73f0f480-1d75-40e9-b43a-e93d868b8412.png"
     }
   ];
 

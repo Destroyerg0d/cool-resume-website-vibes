@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -50,9 +49,9 @@ const Hero = () => {
       <div className="text-center z-10 px-4 max-w-4xl mx-auto">
         <div className="mb-8 animate-fade-in">
           <img
-            src="/lovable-uploads/f11ea963-bbfd-4ef3-98ee-be721debf309.png"
-            alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-purple-400 shadow-2xl hover:scale-110 transition-transform duration-300"
+            src="/lovable-uploads/ab7171f9-969a-41ed-80e8-e39f0167fc83.png"
+            alt="Divyansh Singh Profile"
+            className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-purple-400 shadow-2xl hover:scale-110 transition-transform duration-300 object-cover"
           />
         </div>
 

@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/cool-resume-website-vibes/", // ✅ THIS LINE FIXES GITHUB PAGES
+  base: mode === "production" ? "/cool-resume-website-vibes/" : "/",
   server: {
     host: "::",
     port: 8080,

@@ -148,7 +148,7 @@ const SaasPortals = () => {
               <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div className="transform hover:scale-105 transition-transform duration-300">
                   <BrowserWindow url={portal.url}>
-                    <div className="aspect-video overflow-hidden">
+                    <div className="aspect-video overflow-hidden relative">
                       <img
                         src={portal.previewImage}
                         alt={`${portal.title} preview`}

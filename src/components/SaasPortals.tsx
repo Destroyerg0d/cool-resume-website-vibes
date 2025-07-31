@@ -80,25 +80,25 @@ const SaasPortals = () => {
           {portals.map((portal, index) => (
             <div
               key={index}
-              className={`grid lg:grid-cols-2 gap-12 items-center ${
+              className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}
             >
               {/* Project Info */}
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="flex items-center space-x-4">
-                      <div className={`p-3 rounded-xl bg-gradient-to-r ${portal.gradient} text-white`}>
+                  <div className="flex flex-col sm:flex-row items-start justify-between mb-6 gap-4">
+                    <div className="flex items-start space-x-4 w-full">
+                      <div className={`p-3 rounded-xl bg-gradient-to-r ${portal.gradient} text-white flex-shrink-0`}>
                         {portal.icon}
                       </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-white">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white break-words">
                           {portal.title}
                         </h3>
                         <div className="flex items-center text-gray-400 mt-1">
-                          <Globe size={16} className="mr-2" />
-                          <span>{portal.url}</span>
+                          <Globe size={14} className="mr-2 flex-shrink-0" />
+                          <span className="text-sm break-all">{portal.url}</span>
                         </div>
                       </div>
                     </div>
@@ -106,7 +106,7 @@ const SaasPortals = () => {
                       href={`https://${portal.url}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-cyan-400 transition-colors"
+                      className="text-gray-400 hover:text-cyan-400 transition-colors flex-shrink-0 p-2 sm:p-0"
                     >
                       <ExternalLink size={20} />
                     </a>

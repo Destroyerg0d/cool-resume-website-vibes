@@ -35,27 +35,27 @@ const Hackathons = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
           {experiences.map((experience, index) => (
             <div
               key={index}
               className="bg-white/10 backdrop-blur-md rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 group"
             >
-              <div className="flex items-start mb-6">
-                <div className={`p-3 rounded-xl bg-gradient-to-r ${experience.gradient} text-white mr-4`}>
+              <div className="flex flex-col sm:flex-row items-start mb-6 gap-4">
+                <div className={`p-3 rounded-xl bg-gradient-to-r ${experience.gradient} text-white flex-shrink-0`}>
                   {experience.icon}
                 </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                <div className="flex-1 min-w-0 w-full">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-2">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-purple-400 transition-colors break-words">
                       {experience.title}
                     </h3>
-                    <div className="flex items-center text-purple-400">
-                      <Calendar size={16} className="mr-2" />
+                    <div className="flex items-center text-purple-400 flex-shrink-0">
+                      <Calendar size={14} className="mr-2" />
                       <span className="text-sm">{experience.year}</span>
                     </div>
                   </div>
-                  <h4 className="text-cyan-400 font-semibold mb-3">
+                  <h4 className="text-cyan-400 font-semibold mb-3 text-sm sm:text-base break-words">
                     {experience.subtitle}
                   </h4>
                 </div>

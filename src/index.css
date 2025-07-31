@@ -101,5 +101,25 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    /* Improve mobile scrolling performance */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent text inflation on mobile Safari */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Improve mobile touch targets */
+  button, a, [role="button"] {
+    touch-action: manipulation;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Better mobile font rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }

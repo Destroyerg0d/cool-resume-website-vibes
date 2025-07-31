@@ -55,48 +55,48 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 animate-fade-in leading-tight">
           Hi, I'm{' '}
           <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
             Divyansh Singh
           </span>
         </h1>
 
-        <div className="text-2xl md:text-3xl text-gray-300 mb-8 h-12">
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 h-12 sm:h-14">
           <span className="border-r-2 border-purple-400 pr-2 animate-pulse">
             {currentText}
           </span>
         </div>
 
-        <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in px-2">
           Passionate about creating innovative solutions through technology, with expertise in 
           digital marketing, blockchain development, and automation.
         </p>
 
-        <div className="flex justify-center space-x-6 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-8 sm:mb-12 px-4">
           <button
             onClick={handleGetInTouch}
-            className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
+            className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 px-6 sm:px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
           >
             Get In Touch
           </button>
           <button
             onClick={handleViewWork}
-            className="border border-purple-400 hover:bg-purple-400/20 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 cursor-pointer"
+            className="w-full sm:w-auto border border-purple-400 hover:bg-purple-400/20 px-6 sm:px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             View My Work
           </button>
         </div>
 
-        <div className="flex justify-center space-x-6 mb-12">
-          <a href="mailto:realdivyanshsingh@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
-            <Mail size={24} />
+        <div className="flex justify-center space-x-8 mb-8 sm:mb-12">
+          <a href="mailto:realdivyanshsingh@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110 p-2">
+            <Mail size={28} className="sm:w-6 sm:h-6" />
           </a>
-          <a href="https://github.com/Destroyerg00" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
-            <Github size={24} />
+          <a href="https://github.com/Destroyerg00" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110 p-2">
+            <Github size={28} className="sm:w-6 sm:h-6" />
           </a>
-          <a href="https://linkedin.com/in/divyansh-singh-244557199" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110">
-            <Linkedin size={24} />
+          <a href="https://linkedin.com/in/divyansh-singh-244557199" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110 p-2">
+            <Linkedin size={28} className="sm:w-6 sm:h-6" />
           </a>
         </div>
 

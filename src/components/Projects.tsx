@@ -61,26 +61,28 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
+        <div className="grid gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
               className="bg-white/10 backdrop-blur-md rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 group"
             >
-              <div className="flex items-start justify-between mb-6">
-                <div className="flex items-center space-x-4">
-                  <div className={`p-3 rounded-xl bg-gradient-to-r ${project.gradient} text-white`}>
+              <div className="flex flex-col sm:flex-row items-start justify-between mb-6 gap-4">
+                <div className="flex items-start space-x-4 w-full">
+                  <div className={`p-3 rounded-xl bg-gradient-to-r ${project.gradient} text-white flex-shrink-0`}>
                     {project.icon}
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white group-hover:text-purple-400 transition-colors break-words">
                       {project.title}
                     </h3>
-                    <div className="flex items-center text-gray-400 mt-1">
-                      <Calendar size={16} className="mr-2" />
-                      <span>{project.period}</span>
-                      <span className="mx-2">•</span>
-                      <span className="text-purple-400">{project.role}</span>
+                    <div className="flex flex-col sm:flex-row sm:items-center text-gray-400 mt-1 gap-1 sm:gap-0">
+                      <div className="flex items-center">
+                        <Calendar size={14} className="mr-2 flex-shrink-0" />
+                        <span className="text-sm">{project.period}</span>
+                      </div>
+                      <span className="hidden sm:inline mx-2">•</span>
+                      <span className="text-purple-400 text-sm">{project.role}</span>
                     </div>
                   </div>
                 </div>
